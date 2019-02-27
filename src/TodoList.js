@@ -19,8 +19,7 @@ class TodoList extends Component {
         <TodoForm onSubmit={this.addTodo}/>
         {this.state.todos.map(todo=>(
         <div key={todo.id}>{todo.text}</div>       
-        ))}
-        
+        ))}        
       </div>
     );
   }
