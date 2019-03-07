@@ -19,7 +19,7 @@ class TodoForm extends Component {
         text:this.state.text,
         complite:false
     });
-   // console.log(id);
+   
     
     this.setState({
         text:" "
