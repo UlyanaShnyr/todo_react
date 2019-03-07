@@ -42,9 +42,9 @@ class TodoList extends Component {
           todo={todo}
           selectTab={()=>this.selectTab(todo.id)}
           />  
-
         ))}
-        
+        <hr style={{width:160, borderWidth: 0.3}}/>
+        <div>{this.state.todos.filter(todo=>!todo.complite).length} items left </div>
       </div>
     );
   }
