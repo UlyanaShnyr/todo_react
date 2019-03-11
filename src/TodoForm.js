@@ -3,7 +3,7 @@ import shortid from 'shortid';
 
 class TodoForm extends Component {
   state={
-      text:' '
+      text:''
   }
 
   handleChange=(event)=>{
@@ -19,7 +19,7 @@ class TodoForm extends Component {
         text:this.state.text,
         complite:false
     });
-   // console.log(id);
+   
     
     this.setState({
         text:" "
@@ -30,11 +30,12 @@ class TodoForm extends Component {
   render() {
     return (
     <form onSubmit={this.handleSubmit}>        
-        <input 
-        name="text"
-        value={this.state.text} 
-        onChange={this.handleChange}
-        placeholder="What needs to be done?">
+        <input         
+         name="text"
+         value={this.state.text} 
+         onChange={this.handleChange}
+         placeholder="What needs to be done?"
+        >
         </input>
      </form>
     );
