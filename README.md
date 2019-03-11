@@ -1,1 +1,1 @@
-Preview: https://ulyanashnyr.github.io/todo_react/
+<a href="https://ulyanashnyr.github.io/todo_react/">Preview</a>
